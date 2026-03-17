@@ -31,8 +31,8 @@ async function run() {
 					continue
 				}
 
-				promises.push(api.updateTask(task.id, { dueString: 'Today' }))
-				console.info(`Rescheduled task ${task.id} to today`)
+				promises.push(api.updateTask(task.id, { dueString: 'Tomorrow' }))
+				console.info(`Rescheduled task ${task.id} to tomorrow`)
 			} catch {
 				console.error(`Failed to reschedule task ${task.id}`)
 			}
